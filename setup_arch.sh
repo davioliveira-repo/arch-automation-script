@@ -26,5 +26,7 @@ echo "Activating Flatpak Support..."
 pacman -S flatpak -y
 
 echo "Configuring YAY..."
-pacman -S --needed base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si -y
-yay -Y --gendb
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
