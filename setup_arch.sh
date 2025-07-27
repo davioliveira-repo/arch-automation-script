@@ -10,8 +10,21 @@ pacman -S nano git fastfetch -y
 echo "Installing Firewall..."
 pacman -S gufw -y
 
-echo "Installing Codecs"
+echo "Installing Codecs..."
 pacman -S ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer -y
 
 echo "Installing Firmware Manager..."
-pacman -S fwupd
+pacman -S fwupd -y
+
+echo "Installing NTFS format support..."
+pacman -S ntfs-3g -y
+
+echo "Activating Bluetooth..."
+systemctl start bluetooth.service
+
+echo "Activating Flatpak Support..."
+pacman -S flatpak -y
+
+echo "Configuring YAY..."
+pacman -S --needed base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si -y
+yay -Y --gendb
