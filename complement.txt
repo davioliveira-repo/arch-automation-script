@@ -1,0 +1,11 @@
+Execute o arquivo "complement.sh" e siga os passos abaixo:
+
+1- Tire o "#" das linhas "Color" e "ParallelDownloads = 5"
+2- Altere o valor do "ParallelDownloads" para 10
+3- Aperte "Ctrl + X" para salvar a modificação, "s" e "enter" para confirmar
+
+Run the "complement.sh" file and follow the steps below:
+
+1- Remove the "#" from the "Color" and "ParallelDownloads = 5" lines
+2- Change the value of "ParallelDownloads" to 10
+3- Press "Ctrl + X" to save the modification, "s" and "enter" to confirm
